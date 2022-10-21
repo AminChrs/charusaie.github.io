@@ -1,14 +1,27 @@
 var papers = [
   {
-    authors: "M. Charusaie, A. Amini, S. Rini",
-    title: "Compressibility Measures for Affinely Singular Random Vectors",
-    pdfurl: "https://arxiv.org/abs/2001.03884",
-    where: "Submitted to IEEE Transaction on Information Theory",
-	abs: "There are several ways to measure the compressibility of a random measure; they include general approaches, such as using the rate-distortion curve, as well as more specific notions, such as the Renyi information dimension (RID), and dimensional-rate bias (DRB). The RID parameter indicates the concentration of the measure around lower-dimensional subsets of the space while the DRB parameter specifies the compressibility of the distribution over these lower-dimensional subsets. While the evaluation of such compressibility parameters is well-studied for continuous and discrete measures (e.g., the DRB is closely related to the entropy and differential entropy in discrete and continuous cases, respectively), the case of discrete-continuous measures is quite subtle. In this paper, we focus on a class of multi-dimensional random measures that have singularities on affine lower-dimensional subsets. This class of distributions naturally arises when considering linear transformation of component-wise independent discrete-continuous random variables. Here, we evaluate the RID and DRB for such probability measures. We further provide an upper-bound for the RID of multi-dimensional random measures that are obtained by Lipschitz functions of component-wise independent discrete-continuous random variables (X). The upper-bound is shown to be achievable when the Lipschitz function is AX, where A satisfies SPARK(A) = rank(A) + 1 (e.g., Vandermonde matrices). When considering discrete-domain moving-average processes with non-Gaussian excitation noise, the above results allow us to evaluate the block-average RID and DRB, as well as to determine a relationship between these parameters and other existing compressibility measures. ",
+    authors: "M. Vinaroz*, M. Charusaie*, F. Harder, K. Adamczewski, MJ. Park",
+    title: "Hermite polynomial features for private data generation",
+    pdfurl: "https://proceedings.mlr.press/v162/vinaroz22a.html",
+    where: "International Conference of Machine Learning (ICML22)",
+	abs: "Kernel mean embedding is a useful tool to compare probability measures. Despite its usefulness, kernel mean embedding considers infinite-dimensional features, which are challenging to handle in the context of differentially private data generation. A recent work, DP-MERF (Harder et al., 2021), proposes to approximate the kernel mean embedding of data distribution using finite-dimensional random features, which yields an analytically tractable sensitivity of approximate kernel mean embedding. However, the required number of random features in DP-MERF is excessively high, often ten thousand to a hundred thousand, which worsens the sensitivity of the approximate kernel mean embedding. To improve the sensitivity, we propose to replace random features with Hermite polynomial features. Unlike the random features, the Hermite polynomial features are ordered, where the features at the low orders contain more information on the distribution than those at the high orders. Hence, a relatively low order of Hermite polynomial features can more accurately approximate the mean embedding of the data distribution compared to a significantly higher number of random features. As a result, the Hermite polynomial features help us to improve the privacy-accuracy trade-off compared to DP-MERF, as demonstrated on several heterogeneous tabular datasets, as well as several image benchmark datasets.",
     links: [
       {
-        name: "arXiv",
-        url: "https://arxiv.org/abs/2001.03884"
+        name: "PMLR",
+        url: "https://proceedings.mlr.press/v162/vinaroz22a.html"
+      }
+    ]
+  },
+  {
+    authors: "M. Charusaie, A. Amini, S. Rini",
+    title: "Compressibility Measures for Affinely Singular Random Vectors",
+    pdfurl: "https://ieeexplore.ieee.org/abstract/document/9779613/",
+    where: "IEEE Transaction on Information Theory",
+	abs: "The notion of compressibility of a random measure is a rather general concept which find applications in many contexts from data compression, to signal quantization, and parameter estimation. While compressibility for discrete and continuous measures is generally well understood, the case of discrete-continuous measures is quite subtle. In this paper, we focus on a class of multi-dimensional random measures that have singularities on affine lower-dimensional subsets. We refer to this class of random variables as affinely singular . Affinely singular random vectors naturally arises when considering linear transformation of component-wise independent discrete-continuous random variables. To measure the compressibility of such distributions, we introduce the new notion of dimensional-rate bias (DRB) which is closely related to the entropy and differential entropy in discrete and continuous cases, respectively. Similar to entropy and differential entropy, DRB is useful in evaluating the mutual information between distributions of the aforementioned type. Besides the DRB, we also evaluate the the RID of these distributions. We further provide an upper-bound for the RID of multi-dimensional random measures that are obtained by Lipschitz functions of component-wise independent discrete-continuous random variables (X). The upper-bound is shown to be achievable when the Lipschitz function is AX , where A satisfies SPARK(Am×n)=m+1 (e.g., Vandermonde matrices). When considering discrete-domain moving-average processes with non-Gaussian excitation noise, the above results allow us to evaluate the block-average RID and DRB, as well as to determine a relationship between these parameters and other existing compressibility measures.",
+    links: [
+      {
+        name: "IEEE",
+        url: "https://ieeexplore.ieee.org/abstract/document/9779613/"
       }
     ]
   },
